@@ -15,14 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Turo.AI – AI-Powered Study Summaries & Quizzes",
+  title: "Turo.AI – AI-Powered Study Flashcards",
   description:
-    "Upload your college lessons and get instant summaries and quizzes powered by AI. Study smarter with Turo.AI.",
+    "Upload your lessons and get instant flashcards powered by AI. Study smarter with Turo.AI. ",
   keywords: [
     "AI tutor",
     "study tool",
     "quiz generator",
-    "college learning",
+    "learning",
     "summary tool",
     "GPT tutor",
     "Turo",
