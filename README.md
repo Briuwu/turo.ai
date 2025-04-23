@@ -65,7 +65,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact
 
-Brian Millonte - [millontebry@gmail.com](mailto:millontebry@gmail.com)
-Portfolio Website: [https://brianmillonte.vercel.app/](https://brianmillonte.vercel.app/)
-LinkedIn: [www.linkedin.com/in/brian-laurence-millonte](https://www.linkedin.com/in/brian-laurence-millonte/)
-GitHub: [https://github.com/Briuwu](https://github.com/Briuwu)
+- Brian Millonte - [millontebry@gmail.com](mailto:millontebry@gmail.com)
+- Portfolio Website: [https://brianmillonte.vercel.app/](https://brianmillonte.vercel.app/)
+- LinkedIn: [www.linkedin.com/in/brian-laurence-millonte](https://www.linkedin.com/in/brian-laurence-millonte/)
+- GitHub: [https://github.com/Briuwu](https://github.com/Briuwu)
