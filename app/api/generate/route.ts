@@ -15,7 +15,7 @@ export async function POST(req: Request) {
 
     Each flashcard should be:
     - Clearly written and focused on one concept
-    - In a simple Q&A format
+    - In a simple Q&A formatW
     - Designed for active recall`,
     messages: [
       {

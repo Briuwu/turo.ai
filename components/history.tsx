@@ -9,7 +9,7 @@ export const History = () => {
   const { flashcards } = useFlashcardStore((state) => state);
   return (
     <div className="mt-10">
-      <p className="font-bold">Flashcard History</p>
+      <p className="font-bold">Saved Flashcards</p>
       <div className="mt-5 flex gap-5 flex-wrap">
         {flashcards.map((flashcard) => (
           <Button

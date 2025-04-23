@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
   const buf = Buffer.from(arrayBuffer);
 
   try {
-    const data = await pdfParse(buf);
+    const data = await pdfParse(buf, { max: 2 });
     return NextResponse.json({ text: data.text }, { status: 200 });
   } catch (error) {
     if (error instanceof Error) {

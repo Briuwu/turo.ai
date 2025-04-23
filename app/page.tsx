@@ -3,7 +3,7 @@ import { AI } from "@/components/AI";
 
 export default function Home() {
   return (
-    <main className="p-5 md:p-10 space-y-10">
+    <main className="p-5 max-w-[1440px] mx-auto md:px-0 space-y-10">
       <div className="text-center bg-slate-900 text-white p-10 rounded-xl">
         <p className="opacity-75 font-bold">Learn Smarter, Not Harder!</p>
         <h1 className="font-bold uppercase text-5xl">Turo.AI</h1>
@@ -12,9 +12,7 @@ export default function Home() {
           flashcards using powerful AI.
         </p>
       </div>
-      <div className="grid md:grid-cols-[0.5fr_1fr] gap-10">
-        <AI />
-      </div>
+      <AI />
     </main>
   );
 }

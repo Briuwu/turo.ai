@@ -33,7 +33,7 @@ export const Flashcards = ({ object, isLoading }: Props) => {
   return (
     <div className="bg-white p-5 md:p-10 rounded-xl text-black border border-black">
       {object && !isLoading && !flashcardId && (
-        <div className="flex justify-between items-center mb-5">
+        <div className="flex flex-col md:flex-row gap-5 justify-between items-center mb-5">
           <Button variant="outline" asChild>
             <PDFDownloadLink
               key={object[0].flashcardId}
@@ -49,9 +49,12 @@ export const Flashcards = ({ object, isLoading }: Props) => {
               fileName={`exam_sheet.pdf`}
               className="download-link"
             >
-              {({ loading }) => (loading ? "Loading" : "Download  PDF")}
+              {({ loading }) => (loading ? "Loading" : "Create PDF")}
             </PDFDownloadLink>
           </Button>
+          <p className="text-xs">
+            Save your PDF to study them in the Flashcard Viewer
+          </p>
           <Button
             onClick={() => {
               setFlashcards([
@@ -92,7 +95,7 @@ export const Flashcards = ({ object, isLoading }: Props) => {
                 fileName={`exam_sheet.pdf`}
                 className="download-link"
               >
-                {({ loading }) => (loading ? "Loading" : "Download PDF")}
+                {({ loading }) => (loading ? "Loading" : "Create PDF")}
               </PDFDownloadLink>
             </Button>
 
@@ -111,7 +114,7 @@ export const Flashcards = ({ object, isLoading }: Props) => {
       <p className="text-center font-bold">Generated Flashcards</p>
       <div className="mt-10 grid md:grid-cols-2 gap-5">
         {isLoading ? (
-          <Loader className="mx-auto animate-spin" />
+          <Loader className="mx-auto animate-spin col-span-full" />
         ) : flashcardId && selectedFlashcard ? (
           selectedFlashcard.cards.map((card, index) => (
             <CardComponent key={index} card={card} index={index} />
@@ -124,7 +127,8 @@ export const Flashcards = ({ object, isLoading }: Props) => {
           )
         ) : (
           <p className="text-center col-span-full text-sm opacity-50">
-            No flashcard generated.
+            No flashcard generated. Please upload a PDF file to generate
+            flashcards.
           </p>
         )}
       </div>

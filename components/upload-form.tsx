@@ -174,7 +174,7 @@ export function UploadForm({ submit }: Props) {
         <Button asChild>
           <Link href="/">
             <X />
-            Clear Flashcard
+            Clear Flashcard Filter
           </Link>
         </Button>
       )}

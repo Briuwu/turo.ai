@@ -13,12 +13,12 @@ export const AI = () => {
     schema: z.array(flashcardSchema),
   });
   return (
-    <>
+    <div className="grid md:grid-cols-[0.5fr_1fr] gap-10">
       <UploadForm submit={submit} />
       <Flashcards
         object={object as DeepPartial<z.infer<typeof flashcardSchema>>[]}
         isLoading={isLoading}
       />
-    </>
+    </div>
   );
 };
