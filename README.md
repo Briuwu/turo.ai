@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Turo.AI
 
-## Getting Started
+## AI-Powered Study Assistant for Students
 
-First, run the development server:
+Turo.AI is an intelligent learning companion that transforms your study materials into interactive flashcards and examination sheets, making studying more efficient and effective.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📚 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **PDF Processing:** Upload your lecture notes, textbooks, or any study material in PDF format
+- **AI-Generated Flashcards:** Automatically extract key concepts and create study flashcards
+- **Interactive Learning:** Review flashcards one by one with a spaced repetition system
+- **Examination Sheets:** Generate practice tests based on your study materials
+- **Local Storage:** Save all your flashcards and study materials locally for offline access
+- **Export Options:** Download flashcards and examination sheets as PDF files
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
 
-## Learn More
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- PDF files of your study materials
 
-To learn more about Next.js, take a look at the following resources:
+## 📋 How to Use
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Upload Study Material**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   - Click on "Upload PDF" and select your lecture notes or textbook
+   - The AI will process your document and extract key information
 
-## Deploy on Vercel
+2. **Study Mode**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   - Go through flashcards one by one
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Generate Examination Sheets**
+
+   - Click "Create PDF" to generate a practice test
+   - Customize difficulty and question types
+   - Download as PDF for offline practice
+
+4. **Save and Export**
+   - All flashcards are automatically saved locally
+   - Export your flashcard deck or examination sheets as PDF files
+
+## 🔧 Technical Overview
+
+Turo.AI uses natural language processing (NLP) to analyze your study materials and extract key concepts, definitions, and important information. The application leverages machine learning algorithms to identify the most relevant content for creating effective study aids.
+
+### Technology Stack:
+
+- Full-stack: Next.js
+- AI Processing: OpenAI (GPT-4o-mini), Natural Language Processing
+- PDF Parser: pdf-parse
+- Data Storage: Local Storage
+- Styling: Tailwind CSS, ShadCN
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📞 Contact
+
+Brian Millonte - [millontebry@gmail.com](mailto:millontebry@gmail.com)
+Portfolio Website: [https://brianmillonte.vercel.app/](https://brianmillonte.vercel.app/)
+LinkedIn: [www.linkedin.com/in/brian-laurence-millonte](https://www.linkedin.com/in/brian-laurence-millonte/)
+GitHub: [https://github.com/Briuwu](https://github.com/Briuwu)
