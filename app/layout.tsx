@@ -4,6 +4,7 @@ import "./globals.css";
 import { FlashcardStoreProvider } from "@/providers/flashcard-store-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { Analytics } from "@vercel/analytics/react";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -66,6 +67,20 @@ export default function RootLayout({
       >
         <FlashcardStoreProvider>{children}</FlashcardStoreProvider>
         <Toaster richColors />
+        <footer>
+          <div className="flex flex-col items-center justify-center w-full py-4 text-sm text-center text-gray-500 bg-gray-50 dark:bg-gray-900 dark:text-gray-400">
+            <p>
+              Made with <span className="text-red-500">❤️</span> by{" "}
+              <Link
+                href="https://brianmillonte.vercel.app/"
+                target="_blank"
+                className="underline font-bold"
+              >
+                Briuwu
+              </Link>
+            </p>
+          </div>
+        </footer>
         <Analytics />
       </body>
     </html>
