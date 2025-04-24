@@ -95,7 +95,7 @@ export function UploadForm({ submit }: Props) {
   );
 
   return (
-    <div>
+    <div className="order-2 md:order-1">
       {isPending && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-900/50 backdrop-blur-sm">
           <div className="flex items-center justify-center w-16 h-16 border-4 border-t-4 border-t-blue-500 rounded-full animate-spin"></div>
