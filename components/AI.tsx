@@ -18,8 +18,6 @@ export const AI = () => {
     schema: z.array(flashcardSchema),
   });
 
-  console.log(object);
-
   return (
     <div className="grid md:grid-cols-[0.5fr_1fr] gap-10">
       <div className="grid gap-10 md:sticky md:top-5 self-start">
