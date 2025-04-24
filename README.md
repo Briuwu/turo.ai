@@ -4,6 +4,8 @@
 
 Turo.AI is an intelligent learning companion that transforms your study materials into interactive flashcards and examination sheets, making studying more efficient and effective.
 
+![TuroAI Preview](./public/preview.png)
+
 ## 📚 Features
 
 - **PDF Processing:** Upload your lecture notes, textbooks, or any study material in PDF format
