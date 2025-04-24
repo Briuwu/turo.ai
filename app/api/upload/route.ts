@@ -10,6 +10,14 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "No file provided" }, { status: 400 });
   }
 
+  if (!file.name.endsWith(".pdf")) {
+    return NextResponse.json({ error: "File is not a PDF" }, { status: 400 });
+  }
+
+  if (file.size > 5 * 1024 * 1024) {
+    return NextResponse.json({ error: "File is too large" }, { status: 400 });
+  }
+
   const arrayBuffer = await file.arrayBuffer();
   const buf = Buffer.from(arrayBuffer);
 
