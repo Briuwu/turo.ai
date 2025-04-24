@@ -81,7 +81,6 @@ export function UploadForm({ submit }: Props) {
           }
 
           const { text } = await response.json();
-          console.log(text);
 
           toast("Generating flashcard...");
           submit(text);

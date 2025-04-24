@@ -27,12 +27,14 @@ export const Flashcards = ({ object, isLoading }: Props) => {
     (flashcard) => flashcard.flashcardId === flashcardId
   );
 
+  const invalidFlashcard = object?.[0]?.flashcardId === "invalid-input";
+
   const isSaved = flashcards.some(
     (flashcard) => flashcard.flashcardId === object?.[0]?.flashcardId
   );
   return (
     <div className="bg-white p-5 md:p-10 rounded-xl text-black border border-black">
-      {object && !isLoading && !flashcardId && (
+      {object && !isLoading && !flashcardId && !invalidFlashcard && (
         <div className="flex flex-col md:flex-row gap-5 justify-between items-center mb-5">
           <Button variant="outline" asChild>
             <PDFDownloadLink
@@ -119,6 +121,10 @@ export const Flashcards = ({ object, isLoading }: Props) => {
           selectedFlashcard.cards.map((card, index) => (
             <CardComponent key={index} card={card} index={index} />
           ))
+        ) : invalidFlashcard ? (
+          <p className="text-center text-red-500 font-bold col-span-full">
+            Invalid input. Please check your PDF file and try again.
+          </p>
         ) : object ? (
           object?.flatMap((item) =>
             item.cards?.map((card, index) => (
