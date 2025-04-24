@@ -83,7 +83,7 @@ export function UploadForm({ submit }: Props) {
           const { text } = await response.json();
 
           toast("Generating flashcard...");
-          submit(text);
+          submit(text.slice(0, 8000));
         } catch (error) {
           console.error(error);
           toast.error("Failed to generate flashcards. Please try again.");
@@ -158,7 +158,17 @@ export function UploadForm({ submit }: Props) {
                       </FileUploadList>
                     </FileUpload>
                   </FormControl>
-                  <FormDescription>Upload a pdf up to 5MB.</FormDescription>
+                  <FormDescription>
+                    <span>
+                      Upload a PDF file containing the text you want to create
+                      flashcards from. The file size limit is 5MB.
+                    </span>
+                    <br />
+                    <span className="text-xs">
+                      <strong>Note:</strong> Only 8000 characters will be
+                      processed from the file.
+                    </span>
+                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}

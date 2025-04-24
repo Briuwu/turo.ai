@@ -5,6 +5,14 @@ import { flashcardSchema } from "./schema";
 export async function POST(req: Request) {
   const context = await req.json();
 
+  if (!context) {
+    return new Response("No context provided", { status: 400 });
+  }
+
+  if (context.length > 8000) {
+    return new Response("Context is too long", { status: 400 });
+  }
+
   const result = streamObject({
     model: openai("gpt-4o-mini"),
     schema: flashcardSchema,
