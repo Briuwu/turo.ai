@@ -1,6 +1,9 @@
-import { openai } from "@ai-sdk/openai";
+// import { openai } from "@ai-sdk/openai";
+import { mistral } from "@ai-sdk/mistral";
 import { streamObject } from "ai";
 import { flashcardSchema } from "./schema";
+
+const model = mistral("mistral-small-latest");
 
 export async function POST(req: Request) {
   const context = await req.json();
@@ -14,7 +17,7 @@ export async function POST(req: Request) {
   }
 
   const result = streamObject({
-    model: openai("gpt-4o-mini"),
+    model,
     schema: flashcardSchema,
     output: "array",
     system: `You are an AI learning assistant that creates effective flashcards to help students study and retain information.
