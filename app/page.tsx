@@ -1,5 +1,6 @@
-import { AI } from "@/components/AI";
 import { Suspense } from "react";
+
+import { AI } from "@/components/AI";
 
 export default function Home() {
   return (

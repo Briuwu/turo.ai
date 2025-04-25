@@ -1,7 +1,9 @@
 "use client";
 
-import { useFlashcardStore } from "@/providers/flashcard-store-provider";
 import { useRouter } from "next/navigation";
+
+import { useFlashcardStore } from "@/providers/flashcard-store-provider";
+
 import { Button } from "./ui/button";
 
 export const History = () => {

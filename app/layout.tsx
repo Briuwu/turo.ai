@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import { FlashcardStoreProvider } from "@/providers/flashcard-store-provider";
-import { Toaster } from "@/components/ui/sonner";
-import { Analytics } from "@vercel/analytics/react";
 import Link from "next/link";
+import { Geist, Geist_Mono } from "next/font/google";
+
+import { FlashcardStoreProvider } from "@/providers/flashcard-store-provider";
+
+import { Analytics } from "@vercel/analytics/react";
+
+import { Toaster } from "@/components/ui/sonner";
+
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

@@ -1,16 +1,16 @@
 "use client";
-import { experimental_useObject as useObject } from "@ai-sdk/react";
-import { flashcardSchema } from "@/app/api/generate/schema";
-
-import { Flashcards } from "./flashcards";
-import { UploadForm } from "./upload-form";
-import { z } from "zod";
-import { DeepPartial } from "ai";
-
 import Image from "next/image";
+import { z } from "zod";
+import { experimental_useObject as useObject } from "@ai-sdk/react";
+import { DeepPartial } from "ai";
 
 import logo from "@/public/turo-logo.png";
 import banner from "@/public/turo-banner.png";
+
+import { Flashcards } from "./flashcards";
+import { UploadForm } from "./upload-form";
+
+import { flashcardSchema } from "@/app/api/generate/schema";
 
 export const AI = () => {
   const { submit, object, isLoading } = useObject({

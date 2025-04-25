@@ -1,8 +1,9 @@
 "use client";
 
-import type React from "react";
-
 import { useState } from "react";
+
+import { ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -11,7 +12,6 @@ import {
   DialogTitle,
   DialogFooter,
 } from "@/components/ui/dialog";
-import { ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 import { CardComponent } from "./card";
 
 type FlashcardType = Partial<{

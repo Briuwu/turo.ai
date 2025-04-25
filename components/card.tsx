@@ -1,6 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
+
+import { cn } from "@/lib/utils";
+
 import {
   Card,
   CardContent,
@@ -8,7 +11,6 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import { cn } from "@/lib/utils";
 
 type Props = {
   card: Partial<{
